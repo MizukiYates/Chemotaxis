@@ -16,24 +16,30 @@ Bacteria [] bacteriaArray;
  {    
    //move and show the bacteria   
    background(0);
-   One.move();
-   One.show();
+   for(int i = 0; i < bacteriaArray.length; i++)
+   {
+     bacteriaArray[i].show();
+     bacteriaArray[i].move();
+   }
  }  
  class Bacteria    
  {     
    int myX, myY;
+   int myColor;
    Bacteria()
    {
-     myX = 100;
-     myY = 100;
+     myX = 500;
+     myY = 500;
+     myColor = color(0,255,0);
    }
    void move()
    {
-     myX = myX + (int)(Math.random()*50)-15;
-     myY = myY + (int)(Math.random()*50)-20;
+     myX = myX + (int)(Math.random()*50)-24;
+     myY = myY + (int)(Math.random()*50)-24;
    }
    void show()
    {
+     fill(myColor);
      ellipse(myX,myY,50,50);
    }
  }    
