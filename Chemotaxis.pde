@@ -26,11 +26,17 @@ Bacteria [] bacteriaArray;
  {     
    int myX, myY;
    int myColor;
+   int red;
+   int green;
+   int blue;
    Bacteria()
    {
+     red = (int)(Math.random()*255) +1;
+     green =  (int)(Math.random()*255) +1;
+     blue = (int)(Math.random()*255) +1;
      myX = 500;
      myY = 500;
-     myColor = color(0,255,0);
+     myColor = color(red,green,blue);
    }
    void move()
    {
