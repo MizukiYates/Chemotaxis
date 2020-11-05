@@ -6,7 +6,7 @@ Bacteria [] bacteriaArray;
    size(1000,1000);
    frameRate(10);
    One = new Bacteria();
-   bacteriaArray = new Bacteria [5];
+   bacteriaArray = new Bacteria [10];
    for(int i = 0; i < bacteriaArray.length; i++)
    {
      bacteriaArray[i] = new Bacteria();
